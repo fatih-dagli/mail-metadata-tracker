@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-#Keep terraform state in the S3 bucket
+#Store terraform state in the S3 bucket
 terraform {
   backend "s3" {
     bucket     = "tracker-terraform-state-bucket"
