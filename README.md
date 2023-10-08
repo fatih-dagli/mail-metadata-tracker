@@ -1,4 +1,11 @@
+# **PURPOSE**
 
+**Project Name**: Track sent e-mails 
+
+We want to track e-mails which are sent via AWS SES, for debugging, and auditing purposes. 
+1.  Tracks each sent e-mail's metadata
+2.  Implement the generation of a periodic CSV report containing the metadata of all the 
+e-mails that were sent in the past week. 
 
 # **STRUCTURE**
 
@@ -8,6 +15,7 @@
 
 
 
+# **TECHNOLOGIES**
 
 **Used AWS Services**
 
@@ -125,7 +133,7 @@ I used my own AWS account to implement the solution. If we need to use localstac
 Before using terraform you need to use some AWS CLI commands to authenticate your localstack environment using the profiles.
 
 
-**SECURITY / BEST PRACTICES**
+# **SECURITY / BEST PRACTICES**
 
 **S3**
 
@@ -174,7 +182,7 @@ Before using terraform you need to use some AWS CLI commands to authenticate you
 
 
 
-**STEPS**
+# **STEPS**
 
 * I installed the AWS CLI manually to my computer.
 
@@ -185,7 +193,7 @@ Before using terraform you need to use some AWS CLI commands to authenticate you
 * I created the AWS S3 bucket to store terraform state manually
 * Executed the below terraform commands to create my environment in AWS.
 
-**Before execute terraform commands**
+**Before Execute terraform commands**
 * You need to check the below files and change the releated personal informations
   trackers.tfvars
   send_test_email.py
