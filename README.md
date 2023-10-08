@@ -185,7 +185,11 @@ Before using terraform you need to use some AWS CLI commands to authenticate you
 * I created the AWS S3 bucket to store terraform state manually
 * Executed the below terraform commands to create my environment in AWS.
 
-
+**After Executed terraform commands**
+* You need to check the below files and change the releated personal informations
+  trackers.tfvars
+  send_test_email.py
+  main.tf (s3 bucket name)
 
 **TERRAFORM COMMANDS**
 
