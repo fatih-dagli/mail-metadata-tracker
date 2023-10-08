@@ -1,0 +1,20 @@
+"Records": [
+    {
+        "EventSource": "aws:sns",
+        "EventVersion": "1.0",
+        "EventSubscriptionArn": "arn:aws:sns:us-east-1:<AWS_ACCOUNT_ID>:sns-topic-ses-integration:XXXXXXXXXXXXX",
+        "Sns": {
+            "Type": "Notification",
+            "MessageId": "XXXXXXXX",
+            "TopicArn": "arn:aws:sns:us-east-1:<AWS_ACCOUNT_ID>:sns-topic-ses-integration",
+            "Subject": "Amazon SES Email Event Notification",
+            "Message": "{\"eventType\":\"Delivery\",\"mail\":{\"timestamp\":\"2023-10-07T16:11:13.220Z\",\"source\":\"<USER_EMAİL_ADDRESS>\",\"sourceArn\":\"arn:aws:ses:us-east-1:<AWS_ACCOUNT_ID>:identity/<USER_EMAIL_ADDRESS>\",\"sendingAccountId\":\"<AWS_ACCOUNT_ID>\",\"messageId\":\"XXXXXXX\",\"destination\":[\"<USER_EMAIL_ADDRESS>\"],\"headersTruncated\":false,\"headers\":[{\"name\":\"Received\",\"value\":\"from DESKTOP-XXXXX ([<IP_ADDRESS>]) by <SMTP ADDRESS> with SMTP (SimpleEmailService) id XXXXX for <USER_EMAIL_ADDRESS>; Fri, 07 Oct 2023 16:11:13 +0000 (UTC)\"},{\"name\":\"MIME-Version\",\"value\":\"1.0\"},{\"name\":\"From\",\"value\":\"<USER_EMAIL_ADDRESS>\"},{\"name\":\"To\",\"value\":\"<USER_EMAIL_ADDRESS>\"},{\"name\":\"Date\",\"value\":\"7 Oct 2023 19:11:12 +0300\"},{\"name\":\"Subject\",\"value\":\"Test Email\"},{\"name\":\"Content-Type\",\"value\":\"text/plain; charset=us-ascii\"},{\"name\":\"Content-Transfer-Encoding\",\"value\":\"quoted-printable\"}],\"commonHeaders\":{\"from\":[\"<USER_EMAIL_ADDRESS>\"],\"date\":\"7 Oct 2023 19:11:12 +0300\",\"to\":[\"<USER_EMAIL_ADDRESS>\"],\"messageId\":\"XXXXXX\",\"subject\":\"Test Email\"},\"tags\":{\"ses:operation\":[\"SendSmtpEmail\"],\"ses:configuration-set\":[\"sns-configuration-set\"],\"ses:source-ip\":[\"<IP_ADDRESS>\"],\"ses:from-domain\":[\"XXX.com\"],\"ses:caller-identity\":[\"ses-smtp-user.\"],\"ses:outgoing-ip\":[\"<IP_ADDRESS>\"]}},\"delivery\":{\"timestamp\":\"2023-10-07T16:11:14.003Z\",\"processingTimeMillis\":783,\"recipients\":[\"<USER_EMAIL_ADDRESS>\"],\"smtpResponse\":\"250 2.0.0 OK  XXXX XXXX - gsmtp\",\"reportingMTA\":\"XXX.smtp-out.amazonses.com\"}}\n",
+            "Timestamp": "2023-10-07T16:11:14.168Z",
+            "SignatureVersion": "1",
+            "Signature": "XXXXX",
+            "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-XXXXXX.pem",
+            "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:<AWS_ACCOUNT_ID>:sns-topic-ses-integration:XXXXX",
+            "MessageAttributes": {}
+        }
+    }
+]
