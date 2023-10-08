@@ -63,8 +63,8 @@
             * CSV Reports of the Emails metadata are stored in this bucket. Lambda function is sending the CSV Reports to this S3 bucket every week. Lambda is accessed by using IAM roles and policies.
 3. **SES**
     * This service is used to send **SMTP mail **by user** using the credentials**.
-    * This credential is created by **Terraform **under **IAM user **.These credentials can be obtained from the** S3 state bucket**.
-    * **Configuration set** created and** Event destination** created for sending these metadata to **SNS**
+    * This credential is created by **Terraform** under **IAM user **.These credentials can be obtained from the** S3 state bucket**.
+    * **Configuration set** created and **Event destination** created for sending these metadata to **SNS**
     * **Verified Identity** created for my email and configuration set attached to this identity. This email can be changed in terraform **trackers.tfvars**
     * After terraform created verified Identity, related email users need to verify the email using the sent email manually.
 
@@ -74,7 +74,7 @@
     * SNS Subscription created by Terraform. Added Lambda function to this subscription. So SNS is sending email metadata to the lambda function.
 
 5. **CloudWatch**
-    * **Cloudwatch** is used for **monitoring the Lambda logs **and **scheduling the CSV report Lambda Function.**
+    * **Cloudwatch** is used for **monitoring the Lambda logs** and **scheduling the CSV report Lambda Function.**
     * **Lambda functions** accessing Cloudwatch **using the IAM roles and policies**.
     * Terraform created the **Cloudwatch Event Rule** for **CSV Report Lambda Function.** This function will **execute every monday at 07:00 AM UTC by CloudWatch Event Rule.**
 
